@@ -69,8 +69,14 @@ export default function ChartWithSelectByDay(props) {
               data: data.values,  
               fill: false,
               tension: 0.3,
-              borderColor: "rgb(75, 192, 192)",
-              backgroundColor: "rgba(34, 192, 255, 0.5)",
+              borderColor: 'rgb(75, 192, 192)',
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.5)',
+                'rgba(54, 162, 235, 0.5)',
+                'rgba(255, 206, 86, 0.5)',
+                'rgba(75, 192, 192, 0.5)'
+              ],
+              
             }
           ]
         };
