@@ -44,7 +44,6 @@ const options = {
 
 
 export default function ChartWithSelectByDay(props) {
-  // console.log("days:" + props.days);
   const chartRef = useRef(null);
   const [chartData, setChartData] = useState({
     datasets: [],
@@ -57,7 +56,7 @@ export default function ChartWithSelectByDay(props) {
     }
     
     // fetch data from api endpoints
-    fetch('http://localhost:8000/api/sensor/getSensorAverageData')
+    fetch('http://127.0.0.1:8000/api/sensor/getSensorAverageData')
       .then(response => response.json())
       .then(data => {
         console.log("data:" + JSON.stringify(data));
